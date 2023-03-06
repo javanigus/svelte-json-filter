@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .content-wrapper {
+                display: flex;
+                height: 100%;
+            }
+            nav {
+                background-color: #efefef;
+                padding: 1em;
+                width: 300px;
+                min-width: 300px;
+            }
+            main {
+                padding: 1em;
+            }
+            td {
+                border: 1px solid #ccc;
+                padding: 0.4em;
+            }
+            table {
+                border-collapse: collapse;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <nav>
+                <h2>Search</h2>
+                <input type="text" name="keyword">
+                <button type="button">Search</button>
+                <hr>
+                <h2>Sort By</h2>
+                <select name="" id="">
+                    <option value="date">Date</option>
+                    <option value="name">Field 1</option>
+                </select>
+                <br>
+                <input type="radio" name="direction" id="ascending">
+                <label for="ascending">Ascending</label><br>
+                <input type="radio" name="direction" id="descending">
+                <label for="descending">Descending</label><br>
+                <hr>
+                <h2>Filter</h2>
+                <p><a href="#">Clear filter</a></p>
+                <h3>Field 1 (e.g. Category)</h3>
+                <p>List of unique values in field 1</p>
+                <input type="checkbox" name="cat1-field1" id="id-1">
+                <label for="cat1-field1">id1f1val1</label><br>
+                <input type="checkbox" name="cat1-field2" id="id-2">
+                <label for="cat1-field2">id1f1val2</label><br>
+                <input type="checkbox" name="cat1-field3" id="id-3">
+                <label for="cat1-field3">id1f1val3</label><br>
+                <h3>Field 2 (e.g. Tag)</h3>
+                <p>List of unique values in field 2</p>
+                <input type="checkbox" name="cat2-field1" id="id-4">
+                <label for="cat2-field1">id2f2val1</label><br>
+                <input type="checkbox" name="cat2-field2" id="id-5">
+                <label for="cat2-field2">id2f2val2</label><br>
+                <input type="checkbox" name="cat2-field3" id="id-6">
+                <label for="cat2-field3">id2f2val3</label><br>
+            </nav>
+            <main>
+                <h1>Filter JSON Data Using Svelte</h1>
+                <p>This demo will read a JSON file and using Svelte, dynamically build filter controls and display data from a JSON file.</p>
+                <p><a href="data.json">View the sample JSON file.</a></p>
+                <table>
+                    <tr>
+                        <td>ID</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Field 1</td>
+                        <td>id1f1val1, id1f1val2</td>
+                    </tr>
+                    <tr>
+                        <td>Field 2</td>
+                        <td>id1f2val1</td>
+                    </tr>
+                    <tr>
+                        <td>Field 3</td>
+                        <td>id1f3val1, id1f3val2</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>2012-04-23</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>ID</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Field 1</td>
+                        <td>id2f1val1, id2f1val2</td>
+                    </tr>
+                    <tr>
+                        <td>Field 2</td>
+                        <td>id2f2val1</td>
+                    </tr>
+                    <tr>
+                        <td>Field 3</td>
+                        <td>id2f3val1, id2f3val2</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>2013-04-23</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>ID</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Field 1</td>
+                        <td>id3f1val1, id3f1val2</td>
+                    </tr>
+                    <tr>
+                        <td>Field 2</td>
+                        <td>id3f2val1</td>
+                    </tr>
+                    <tr>
+                        <td>Field 3</td>
+                        <td>id3f3val1, id3f3val2</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>2014-04-23</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td>ID</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Field 1</td>
+                        <td>id4f1val1, id4f1val2</td>
+                    </tr>
+                    <tr>
+                        <td>Field 2</td>
+                        <td>id4f2val1</td>
+                    </tr>
+                    <tr>
+                        <td>Field 3</td>
+                        <td>id4f3val1, id4f3val2</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>2015-04-23</td>
+                    </tr>
+                </table>
+            </main>
+        </div>
+    </body>
+</html>

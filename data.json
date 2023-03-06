@@ -1,0 +1,35 @@
+{
+    "sortByFields": ["date", "field 1"],
+    "keywordSearchFields": ["field 1", "field 2"],
+    "filterGroupFields": ["field 1", "field 2"],
+    "items": [
+        {
+            "id": 1, 
+            "date": "2012-04-23",
+            "field 1": ["id1f1val1", "id1f1val2"],
+            "field 2": "id1f2val1",
+            "field 3": ["id1f3val1", "id1f3val3"],
+        },
+        {
+            "id": 2, 
+            "date": "2013-04-23",
+            "field 1": ["id2f1val1", "id2f1val2"],
+            "field 2": "id2f2val1",
+            "field 3": ["id2f3val1", "id2f3val3"],
+        },
+        {
+            "id": 3, 
+            "date": "2014-04-23",
+            "field 1": ["id3f1val1", "id3f1val2"],
+            "field 2": "id3f2val1",
+            "field 3": ["id3f3val1", "id3f3val3"],
+        },
+        {   
+            "id": 4, 
+            "date": "2015-04-23",
+            "field 1": ["id4f1val1", "id4f1val2"],
+            "field 2": "id4f2val1",
+            "field 3": ["id4f3val1", "id4f3val3"],
+        }
+    ]
+}
